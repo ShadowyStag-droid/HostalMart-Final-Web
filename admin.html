@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HostelMart Admin</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <h1>🛠️ HostelMart Admin Panel</h1>
+      <p class="tagline">Manage products and orders</p>
+    </div>
+    <nav class="nav-buttons">
+      <a href="index.html" class="nav-btn">Home</a>
+      <button id="logoutBtn" class="nav-btn hidden">Logout</button>
+    </nav>
+  </header>
+
+  <!-- Admin Login Form -->
+  <section id="admin-login" class="login-container">
+    <h2>Admin Login</h2>
+    <form>
+      <input type="email" name="email" placeholder="Admin Email" required />
+      <input type="password" name="password" placeholder="Password" required />
+      <button type="submit">Login</button>
+    </form>
+  </section>
+
+  <!-- Admin Dashboard -->
+  <section id="admin-content" class="hidden">
+    <h2>Add / Edit Product</h2>
+    <form id="product-form" class="form-grid">
+      <input type="text" id="name" placeholder="Product Name" required />
+      <input type="number" id="price" placeholder="Price ₹" required />
+      <input type="text" id="category" placeholder="Category (e.g. snacks, combo)" required />
+      <input type="hidden" id="productId" />
+      <button type="submit">Save Product</button>
+    </form>
+
+    <h2>Product List</h2>
+    <div id="productsContainer" class="product-grid"></div>
+
+    <h2>User Orders</h2>
+    <div id="ordersContainer" class="product-grid"></div>
+  </section>
+
+  <footer>
+    <p>© 2025 HostelMart</p>
+  </footer>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+

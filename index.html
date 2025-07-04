@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>HostelMart</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="main-header">
+    <div class="header-content">
+      <h1>🏨 HostelMart</h1>
+      <p class="tagline">Delivery to your room in 5 minutes</p>
+    </div>
+    <nav class="nav-buttons">
+      <a href="cart.html" class="nav-btn">Cart</a>
+      <a href="orders.html" class="nav-btn">My Orders</a>
+      <a href="admin.html" class="nav-btn">Admin</a>
+    </nav>
+  </header>
+
+  <section class="filter-bar">
+    <input type="text" id="searchInput" placeholder="Search products...">
+    <select id="categorySelect">
+      <option value="all">All</option>
+      <option value="regular">Regular</option>
+      <option value="combo">Combo</option>
+    </select>
+  </section>
+
+  <main>
+    <div id="productList" class="product-grid"></div>
+  </main>
+
+  <footer>
+    <p>© 2025 HostelMart</p>
+  </footer>
+
+  <script type="module" src="firebaseConfig.js"></script>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
